@@ -1,0 +1,83 @@
+
+// Developer: Forex Robot Easy Team
+// Developer's site: forexroboteasy.com
+
+// DR IDR Range Indicator PRO
+
+// Calculate and plot ADR, ODR, and RDR for a specified number of days
+void calculateRanges(int numDays) {
+    // Calculate ADR, ODR, and RDR for each day
+    for (int i = 0; i < numDays; i++) {
+        double adr = calculateADR(i);
+        double odr = calculateODR(i);
+        double rdr = calculateRDR(i);
+
+        // Plot the calculated ranges on the chart
+        plotRange(adr, odr, rdr);
+    }
+}
+
+// Calculate Average Daily Range (ADR) for a specific day
+double calculateADR(int day) {
+    // TODO: Implement ADR calculation logic
+    return 0.0;
+}
+
+// Calculate Open Daily Range (ODR) for a specific day
+double calculateODR(int day) {
+    // TODO: Implement ODR calculation logic
+    return 0.0;
+}
+
+// Calculate Range Daily Range (RDR) for a specific day
+double calculateRDR(int day) {
+    // TODO: Implement RDR calculation logic
+    return 0.0;
+}
+
+// Plot the calculated ranges on the chart
+void plotRange(double adr, double odr, double rdr) {
+    // TODO: Implement plot logic
+}
+
+// Backtest strategies using the calculated ranges
+void backtestStrategies() {
+    // TODO: Implement backtesting logic
+}
+
+// Implement fully customizable advanced statistics for traders
+void implementAdvancedStatistics() {
+    // TODO: Implement advanced statistics logic
+}
+
+// Test the code thoroughly to ensure its accuracy and reliability
+void testCode() {
+    // TODO: Implement code testing logic
+}
+
+// Main function
+int OnInit() {
+    // Specify the number of days for calculation
+    int numDays = 10;
+
+    // Calculate and plot ranges
+    calculateRanges(numDays);
+
+    // Backtest strategies
+    backtestStrategies();
+
+    // Implement advanced statistics
+    implementAdvancedStatistics();
+
+    // Test the code
+    testCode();
+
+    return(INIT_SUCCEEDED);
+}
+
+// Program entry point
+int OnStart() {
+    // TODO: Add necessary code for program execution
+
+    return(0);
+}
